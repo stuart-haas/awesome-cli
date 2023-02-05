@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  cli:
+    container_name: awesome-cli
+    build: 
+      context: .
+      dockerfile: ./ops/docker/Dockerfile
+    volumes:
+      - ./awesome-cli.yml:/app/awesome-cli.yml
